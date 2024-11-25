@@ -1,0 +1,113 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #007BFF, #00C6FF);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+/* Container styling */
+.container {
+    max-width: 400px;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+/* Add some hover animation */
+.container:hover {
+    transform: scale(1.05);
+}
+
+/* Main title styling */
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+/* Input field styling */
+input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    font-size: 16px;
+    background-color: #f8f8f8;
+    transition: border-color 0.3s ease;
+}
+
+/* Input focus effect */
+input[type="text"]:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Button styling */
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Button hover and focus effect */
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+/* Weather information section */
+.weather-info {
+    margin-top: 30px;
+}
+
+.weather-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.weather-info p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Add media query for mobile responsiveness */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    button {
+        padding: 10px 20px;
+    }
+
+    input[type="text"] {
+        padding: 10px;
+    }
+}
